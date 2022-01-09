@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{0C95060D-78A9-2EBE-412B-D21DADFE2AEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug\Logger">
+      <UniqueIdentifier>{5B058FA9-4768-1E4E-F0ED-5604DC2FEAD0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rasterization">
+      <UniqueIdentifier>{144DD003-800D-4C3A-4948-95B7B5C79016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utillities">
+      <UniqueIdentifier>{4DCEBFB9-3986-0107-A28D-DA628E649CF7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Debug\Logger\Logger.h">
+      <Filter>Debug\Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Rasterization\Rasterizer.h">
+      <Filter>Rasterization</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\Rasterization\Surface.h">
+      <Filter>Rasterization</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utillities\Util.h">
+      <Filter>Utillities</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Time\Clock.h" />
+    <ClInclude Include="src\Platform\Application\Application.h" />
+    <ClInclude Include="src\pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Debug\Logger\Logger.cpp">
+      <Filter>Debug\Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Rasterization\Rasterizer.cpp">
+      <Filter>Rasterization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\Rasterization\Surface.cpp">
+      <Filter>Rasterization</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utillities\Util.cpp">
+      <Filter>Utillities</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Time\Clock.cpp" />
+    <ClCompile Include="src\Platform\Entry\Entry.cpp" />
+    <ClCompile Include="src\Platform\Application\Application.cpp" />
+  </ItemGroup>
+</Project>

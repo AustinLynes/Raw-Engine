@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="XMath">
+      <UniqueIdentifier>{A751630E-1366-8BBF-DCE7-2E1F48BB87F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XTime">
+      <UniqueIdentifier>{6C49670E-D85D-8FBF-A1DF-321F0DB38BF0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\RawEngine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\RawEngine.cpp" />
+  </ItemGroup>
+</Project>

@@ -8,7 +8,6 @@
 
 #include <Platform/Application/Application.h>
 
-#include <Graphics/Rasterization/Surface.h>
 #include <cstdlib>
 
 #define WINDOW_TITLE "Raw Engine"

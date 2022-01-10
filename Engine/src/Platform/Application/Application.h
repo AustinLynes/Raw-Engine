@@ -10,7 +10,6 @@ namespace Engine {
 
 		virtual bool Init() = 0;
 		virtual bool Shutdown() = 0;
-
 		virtual void Update() = 0;
 	};
 

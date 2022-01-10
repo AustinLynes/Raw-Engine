@@ -3,10 +3,12 @@
 #include <Platform/Application/Application.h>
 
 #include "Utillities/Util.h"
+
+#include <Graphics/Renderer/Renderer.h>
+#include "Defines.h"
+
 #include "RMath.h"
 
-#include <Graphics/Rasterization/Surface.h>
-#include <Graphics/Rasterization/Rasterizer.h>
 #include <cstdint>
 
 using namespace Graphics;
@@ -21,7 +23,7 @@ public:
 
 	
 private:
-	Rasterizer* _rasterizer;
+	Renderer* _renderer;
 
 
 };

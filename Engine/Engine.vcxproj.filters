@@ -18,10 +18,10 @@
     <ClInclude Include="src\Debug\Logger\Logger.h">
       <Filter>Debug\Logger</Filter>
     </ClInclude>
-    <ClInclude Include="src\Graphics\Rasterization\Rasterizer.h">
+    <ClInclude Include="src\Graphics\Renderer\Renderer.h">
       <Filter>Rasterization</Filter>
     </ClInclude>
-    <ClInclude Include="src\Graphics\Rasterization\Surface.h">
+    <ClInclude Include="src\Graphics\Renderer\Surface\Surface.h">
       <Filter>Rasterization</Filter>
     </ClInclude>
     <ClInclude Include="src\Utillities\Util.h">
@@ -30,15 +30,17 @@
     <ClInclude Include="src\Time\Clock.h" />
     <ClInclude Include="src\Platform\Application\Application.h" />
     <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\Defines.h" />
+    <ClInclude Include="src\Graphics\Renderer\Rasterizer\Rasterizer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Debug\Logger\Logger.cpp">
       <Filter>Debug\Logger</Filter>
     </ClCompile>
-    <ClCompile Include="src\Graphics\Rasterization\Rasterizer.cpp">
+    <ClCompile Include="src\Graphics\Renderer\Renderer.cpp">
       <Filter>Rasterization</Filter>
     </ClCompile>
-    <ClCompile Include="src\Graphics\Rasterization\Surface.cpp">
+    <ClCompile Include="src\Graphics\Renderer\Surface\Surface.cpp">
       <Filter>Rasterization</Filter>
     </ClCompile>
     <ClCompile Include="src\Utillities\Util.cpp">
@@ -47,5 +49,9 @@
     <ClCompile Include="src\Time\Clock.cpp" />
     <ClCompile Include="src\Platform\Entry\Entry.cpp" />
     <ClCompile Include="src\Platform\Application\Application.cpp" />
+    <ClCompile Include="src\Graphics\Renderer\Rasterizer\Rasterizer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

@@ -4,8 +4,21 @@
 
 namespace RMath {
 
-	static float Lerp(uint32_t a, uint32_t b, float ratio) {
+	static float Lerp(int a, int b, float ratio) {
 		return static_cast<float>((b - a) * ratio + a);
+	}
+
+	static void GetPixelSpace(float x, float y, uint32_t width, uint32_t height, int*& fill) {
+		int pos_x = (x + 1.0f) * (width * 0.5f);
+		int pos_y = (1.0f - y) * (height * 0.5f);
+
+		delete fill;
+
+		fill = new int[2]{
+			pos_x,
+			pos_y
+		};
+
 	}
 
 
@@ -16,6 +29,17 @@ namespace RMath {
 	static float Normalize(uint32_t value, float base) {
 		return static_cast<float>(value) / base;
 	}
+
+
+	/*Vector2 Vector2Lerp(Vector2 a, Vector2 b, float ratio) {
+
+		Vector2 c{ 0 };
+
+		c.X = RMath::Lerp(a.X, b.X, ratio);
+		c.Y = RMath::Lerp(a.X, b.X, ratio);
+
+		return c;
+	}*/
 
 
 }

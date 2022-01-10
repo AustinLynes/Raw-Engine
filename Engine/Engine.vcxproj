@@ -126,20 +126,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Defines.h" />
+    <ClInclude Include="src\Graphics\Renderer\Rasterizer\Rasterizer.h" />
     <ClInclude Include="src\Platform\Application\Application.h" />
     <ClInclude Include="src\Debug\Logger\Logger.h" />
-    <ClInclude Include="src\Graphics\Rasterization\Rasterizer.h" />
-    <ClInclude Include="src\Graphics\Rasterization\Surface.h" />
+    <ClInclude Include="src\Graphics\Renderer\Renderer.h" />
+    <ClInclude Include="src\Graphics\Renderer\Surface\Surface.h" />
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\Utillities\Util.h" />
     <ClInclude Include="src\Time\Clock.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Graphics\Renderer\Rasterizer\Rasterizer.cpp" />
     <ClCompile Include="src\Platform\Application\Application.cpp" />
     <ClCompile Include="src\Platform\Entry\Entry.cpp" />
     <ClCompile Include="src\Debug\Logger\Logger.cpp" />
-    <ClCompile Include="src\Graphics\Rasterization\Rasterizer.cpp" />
-    <ClCompile Include="src\Graphics\Rasterization\Surface.cpp" />
+    <ClCompile Include="src\Graphics\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Graphics\Renderer\Surface\Surface.cpp" />
     <ClCompile Include="src\Utillities\Util.cpp" />
     <ClCompile Include="src\Time\Clock.cpp" />
   </ItemGroup>
@@ -147,6 +150,9 @@
     <ProjectReference Include="..\RMath\RMath.vcxproj">
       <Project>{A1BEF60D-0DD3-1EBF-D654-C21E42281BF0}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
